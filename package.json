@@ -1,0 +1,12 @@
+{
+  "name": "ovvoc-test-scale-04",
+  "version": "1.0.0",
+  "description": "CLI toolkit with chalk (12 files)",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/index.test.js"
+  },
+  "dependencies": {
+    "chalk": "4.1.2"
+  }
+}
