@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 function renderBanner(title, subtitle) {
   const width = Math.max(title.length, (subtitle || '').length) + 4;
@@ -33,4 +33,4 @@ function renderSeparator(char, width) {
   return chalk.hex('#4A9EFF')(char.repeat(width || 50));
 }
 
-module.exports = { renderBanner, renderHeading, renderVersion, renderSeparator };
+export default {  renderBanner, renderHeading, renderVersion, renderSeparator  };

@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 function renderTreeNode(name, isDir, isLast, depth) {
   const indent = depth > 0
@@ -33,4 +33,4 @@ function renderFileEntry(name, size, modified) {
     (modified ? chalk.dim(' (' + modified + ')') : '');
 }
 
-module.exports = { renderTreeNode, renderTree, renderFileSize, renderFileEntry };
+export default {  renderTreeNode, renderTree, renderFileSize, renderFileEntry  };

@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 function logInfo(msg) {
   return chalk.blue('[INFO]') + ' ' + msg;
@@ -26,7 +26,7 @@ function printError(msg) { console.log(logError(msg)); }
 function printDebug(msg) { console.log(logDebug(msg)); }
 function printSuccess(msg) { console.log(logSuccess(msg)); }
 
-module.exports = {
+export default { 
   logInfo, logWarn, logError, logDebug, logSuccess,
   printInfo, printWarn, printError, printDebug, printSuccess
-};
+ };

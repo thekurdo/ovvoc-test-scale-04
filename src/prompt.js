@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 function renderPrompt(question, defaultValue) {
   const q = chalk.bold.green('?') + ' ' + chalk.bold.white(question);
@@ -37,4 +37,4 @@ function renderError(message) {
   return chalk.red.bold('✗') + ' ' + chalk.red(message);
 }
 
-module.exports = { renderPrompt, renderConfirm, renderSelect, renderInput, renderError };
+export default {  renderPrompt, renderConfirm, renderSelect, renderInput, renderError  };

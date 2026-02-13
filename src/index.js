@@ -1,16 +1,16 @@
-const logger = require('./logger');
-const progress = require('./progress');
-const table = require('./table');
-const spinner = require('./spinner');
-const banner = require('./banner');
-const diff = require('./diff');
-const tree = require('./tree');
-const status = require('./status');
-const prompt = require('./prompt');
-const help = require('./help');
-const theme = require('./theme');
+import logger from './logger.js';
+import progress from './progress.js';
+import table from './table.js';
+import spinner from './spinner.js';
+import banner from './banner.js';
+import diff from './diff.js';
+import tree from './tree.js';
+import status from './status.js';
+import prompt from './prompt.js';
+import help from './help.js';
+import theme from './theme.js';
 
-module.exports = {
+export default { 
   logger,
   progress,
   table,
@@ -22,4 +22,4 @@ module.exports = {
   prompt,
   help,
   theme
-};
+ };

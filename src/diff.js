@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 function renderAddedLine(line) {
   return chalk.green('+ ' + line);
@@ -37,7 +37,7 @@ function renderDiffStats(added, removed) {
   return chalk.green.bold('+' + added) + chalk.dim(' / ') + chalk.red.bold('-' + removed);
 }
 
-module.exports = {
+export default { 
   renderAddedLine, renderRemovedLine, renderContextLine,
   renderDiffHeader, renderHunkHeader, renderDiff, renderDiffStats
-};
+ };
