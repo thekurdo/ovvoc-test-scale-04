@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 const SPINNER_FRAMES = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'];
 
@@ -26,8 +26,8 @@ function formatSpinnerWithTime(frame, text, elapsed) {
   return formatSpinnerFrame(frame, text) + ' ' + formatElapsed(elapsed);
 }
 
-module.exports = {
+export default { 
   SPINNER_FRAMES,
   formatSpinnerFrame, formatSpinnerDone, formatSpinnerFail,
   formatSpinnerWarn, formatElapsed, formatSpinnerWithTime
-};
+ };

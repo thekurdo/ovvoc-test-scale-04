@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 function renderTable(headers, rows) {
   const colWidths = headers.map((h, i) => {
@@ -35,4 +35,4 @@ function renderDivider(width = 40, label) {
   return chalk.gray('─'.repeat(width));
 }
 
-module.exports = { renderTable, renderKeyValue, renderDivider };
+export default {  renderTable, renderKeyValue, renderDivider  };

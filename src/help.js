@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 function renderUsage(command, args) {
   return chalk.bold.white('Usage:') + ' ' + chalk.cyan(command) + ' ' +
@@ -34,7 +34,7 @@ function renderDeprecated(message) {
   return chalk.bgYellow.black(' DEPRECATED ') + ' ' + chalk.yellow(message);
 }
 
-module.exports = {
+export default { 
   renderUsage, renderCommandList, renderOption,
   renderSection, renderExample, renderDeprecated
-};
+ };

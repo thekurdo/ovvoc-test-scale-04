@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 const THEMES = {
   default: {
@@ -63,7 +63,7 @@ function highlight(text) {
   return chalk.bgHex(getTheme().primary).black(text);
 }
 
-module.exports = {
+export default { 
   THEMES, setTheme, getTheme,
   primary, secondary, success, warning, danger, muted, accent, highlight
-};
+ };

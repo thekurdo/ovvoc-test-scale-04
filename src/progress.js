@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 function renderProgressBar(current, total, width = 30) {
   const ratio = Math.min(current / total, 1);
@@ -32,6 +32,6 @@ function renderPending(label) {
   return chalk.yellow('○') + ' ' + chalk.dim(label);
 }
 
-module.exports = {
+export default { 
   renderProgressBar, renderStep, renderDownload, renderComplete, renderPending
-};
+ };

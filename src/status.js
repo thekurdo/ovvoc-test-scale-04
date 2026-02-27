@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 function renderSuccess(label) {
   return chalk.green('●') + ' ' + chalk.green.bold(label);
@@ -37,7 +37,7 @@ function renderTestResult(name, status, duration) {
   return badge + ' ' + chalk.white(name) + time;
 }
 
-module.exports = {
+export default { 
   renderSuccess, renderFail, renderSkip, renderRunning,
   renderPending, renderStatusBadge, renderTestResult
-};
+ };

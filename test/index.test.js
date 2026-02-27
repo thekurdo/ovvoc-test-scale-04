@@ -1,4 +1,4 @@
-const toolkit = require('../src/index');
+import toolkit from '../src/index.js';
 const {
   logger, progress, table, spinner, banner,
   diff, tree, status, prompt, help, theme
